@@ -14,6 +14,7 @@
 body {/*Indico la anchura que quiero para el contenido, la separación de la parte superior y estilo de la letra y color fondo*/
     width: 70%;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-family: metropolis;
     font-size: 15px;
     background-color: #cccccc;
