@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Zafra Rodríguez</title>
-    <link href="css/ejercicio6css_cv1.css" rel="stylesheet" type="text/css" >
+    <link href="./css/css1.css" rel="stylesheet" type="text/css" >
 </head>
 
 <body>
@@ -18,7 +18,9 @@
                         <h6>ABIERTO A EMPLEO</h6>
                     </div>
                 </div>
-                <div class="imagen"></div>
+                <div class="imagen">
+                    <img src="./jpg/imagen.jpg" alt="Foto profesional." class="respimg">
+                </div>
             </div>
         </header>
         <section>
@@ -37,8 +39,7 @@
 
                 <div class="trabajoactual">
                     <h2>Trabajo actual</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis.
-                    Ornare porta laoreet quam dignissim scelerisque libero placerat non arcu. Rhoncus massa egestas sociis pulvinar! Rhoncus ultrices interdum scelerisque erat donec platea, neque aptent massa. Semper augue euismod aliquam in velit semper penatibus ac. Est suscipit cras vitae amet vitae mollis nisi feugiat tristique facilisi rutrum leo? Ac erat quisque etiam purus augue. Nulla natoque ullamcorper faucibus iaculis fringilla dapibus justo lacinia condimentum, nibh habitant. Litora hac accumsan donec curabitur cras euismod! Vestibulum ridiculus morbi hac dolor felis enim mattis quis? Litora sed luctus ante sapien himenaeos venenatis arcu metus. Metus himenaeos eleifend suscipit lobortis per adipiscing vestibulum vehicula sociosqu et suscipit laoreet. Suspendisse libero rutrum magnis dolor tristique! Risus facilisi pretium consectetur. Non in augue auctor cum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis. Ornare porta laoreet quam dignissim scelerisque libero placerat non arcu. Rhoncus massa egestas sociis pulvinar! Rhoncus ultrices interdum scelerisque erat donec platea, neque aptent massa. Semper augue euismod aliquam in velit semper penatibus ac. Est suscipit cras vitae amet vitae mollis nisi feugiat tristique facilisi rutrum leo? Ac erat quisque etiam purus augue.</p>
                 </div>
 
                 <div class="trabajosanteriores">
@@ -63,10 +64,25 @@
                 <div class="redes">
                     <h2>Sígueme en redes</h2>
                     <div class="video1">
-                        <video id="video1" src="mp4/DigitalWorld.mp4" controls>
+                        <video id="video1" src="mp4/DigitalWorld.mp4">
                             <source src="https://pixabay.com/videos/id-27706/"> Vídeo currículum.
                         </video>
                     </div>
+
+                    <div>
+                        <button class="boton" onclick="vervideo()">Ver el vídeo</button>
+                    </div>
+                    <script> 
+                        let video1 = document.getElementById("video1"); 
+                        function vervideo(){
+                            if (video1.paused){
+                                    video1.play();
+                                }
+                            else{
+                                    video1.pause();
+                                }
+                            }
+                    </script>
                     <div class="iconos">
                         <a href="https://www.linkedin.com"><img src="redes/linkedin.png" alt="LinkedIn" id="linkedin"></a>
                         <a href="https://www.twitter.com"><img src="redes/twitter.png" alt="Twitter" id="twitter"></a>
@@ -75,20 +91,6 @@
                         <a href="https://www.youtube.com"><img src="redes/youtube.png" alt="youtube" id="youtube"></a>
                         <a href="https://www.tumblr.com"><img src="redes/tumblr.png" alt="Tumblr" id="tumblr"></a>
                     </div>
-                    <!--<div class="boton">
-                            <button onclick="vervideo()">Ver el vídeo</button>
-                        </div>
-                        <script> 
-                            let video1 = document.getElementById("video1"); 
-                            function vervideo(){
-                                if (video1.paused){
-                                    video1.play();
-                                }
-                                else{
-                                    video1.pause();
-                                }
-                            }
-                        </script> -->
                 </div>
 
             </div>

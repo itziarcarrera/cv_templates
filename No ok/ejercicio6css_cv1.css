@@ -1,0 +1,144 @@
+* {                       /*Para aplicar a todos los elementos del documento*/
+    width: 100%;          /*Ancho que quiero que tengan todos los elementos de mi web*/
+    margin: auto;         /*Para que mi web esté centrada*/
+    position: relative;   /*Para alinear verticalmente el texto, tabla y celdas*/
+    text-align: center;
+    align-items: center;
+}
+
+@font-face {               /*Descargué esta fuente de Internet y así la incluyo en mi documento.*/
+  font-family: metropolis;
+  src: url(../font/metropolis/Metropolis-ExtraLight.otf);
+}
+
+body {/*Indico la anchura que quiero para el contenido, la separación de la parte superior y estilo de la letra y color fondo*/
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: metropolis;
+    font-size: 15px;
+    background-color: #cccccc;
+}
+.contenedor {
+    background-color: white;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.divimagen {
+    display: flex;
+    text-align: center;
+    background-color: #34495E;
+}
+.imagen {
+    background-image: url("../jpg/imagen.jpg");
+    background-color: ivory;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+
+
+    height: 350px;
+}
+.datos {
+    color: #cccccc;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.datos p {
+    font-size: large;
+    letter-spacing: 2px;
+    margin-top: 2%;
+
+}
+.abiertoempleo h6 {
+    font-size:medium;
+    letter-spacing: 1px;
+    border: 1px solid #cccccc;
+    width: 40%;
+    margin-top: 5%;
+}
+section{
+    display: flex;
+    background-color: white;
+}
+.seccion{
+    margin: 1%;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    display: flex;
+}
+.quehago, .quepuedohacer {
+    margin: 1%;
+}
+.quehago p, .quepuedohace p{
+    width: auto;
+}
+h2, p{
+    margin: 2%;
+    width: 98%;
+}
+
+.trabajoactual {
+    display: flex;
+    flex-direction: column;
+}
+
+.trabajoactual h2{
+    margin-bottom: 0%;
+}
+.trabajoactual p{
+    width: 96%;
+}
+.trabajosanteriores {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tr1, .tr2, .tr3, .tr4 {
+    width: 46%;
+    margin: 2%;
+}
+.video1{
+    width: 70%;
+    margin: 3% 0 3% 0;
+}
+    /*box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /*Utilicé un generador de sombras online.
+    vertical-align: baseline;
+    z-index: 1;
+    user-select: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box !important;
+    outline: none !important;*/
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3% 0 3% 0;
+    align-items: center;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+a{
+    width: 10%;
+    margin: 0%;
+}
+#linkedin, #twitter, #facebook, #instagram, #youtube, #tumblr{
+    width: 35px;
+    /*object-fit: cover;
+    object-position: 50% 50%;*/
+}
