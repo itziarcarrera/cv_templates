@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +8,15 @@
 
 <body>
     <div class="contenedor">
+
+    <!--He estructurado el documento en dos partes: una con los datos personales y foto del usuario y otra con toda la info profesional.-->
+
         <header>
             <div class="divimagen">
                 <div class="datos">
                     <h1>Luis Zafra Rodríguez</h1>
                     <p>Ingeniero en desarrollo de aplicaciones</p>
-                    <div class="abiertoempleo">
-                        <h6>ABIERTO A EMPLEO</h6>
-                    </div>
+                    <h6>ABIERTO A EMPLEO</h6>
                 </div>
                 <div class="imagen">
                     <img src="./jpg/imagen.jpg" alt="Foto profesional." class="respimg">
@@ -64,14 +64,14 @@
                 <div class="redes">
                     <h2>Sígueme en redes</h2>
                     <div class="video1">
-                        <video id="video1" src="mp4/DigitalWorld.mp4">
-                            <source src="https://pixabay.com/videos/id-27706/"> Vídeo currículum.
-                        </video>
+                        <video id="video1" src="mp4/DigitalWorld.mp4">Vídeo currículum.</video>
                     </div>
 
                     <div>
                         <button class="boton" onclick="vervideo()">Ver el vídeo</button>
                     </div>
+
+                    <!--AÑADO UN SCRIPT PARA QUE FUNCIONE EL BOTÓN DE REPRODUCCIÓN DEL VÍDEO:-->
                     <script> 
                         let video1 = document.getElementById("video1"); 
                         function vervideo(){
@@ -83,6 +83,7 @@
                                 }
                             }
                     </script>
+
                     <div class="iconos">
                         <a href="https://www.linkedin.com"><img src="redes/linkedin.png" alt="LinkedIn" id="linkedin"></a>
                         <a href="https://www.twitter.com"><img src="redes/twitter.png" alt="Twitter" id="twitter"></a>
