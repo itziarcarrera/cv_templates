@@ -1,4 +1,3 @@
-
 /*EN ESTE CASO, HE OPTADO POR UN DISEÑO UN POCO MÁS DIVERTIDO, MENOS SERIO, PERO CONTINUANDO CON UN ASPECTO TRANQUILO.*/
 /*COMENTARÉ LAS CARACTERÍSTICAS QUE DIFIEREN DE LOS OTROS DOS DISEÑOS.*/
 
@@ -7,62 +6,97 @@
     max-width: 1440px;
     margin: auto;
     position: relative;
-}
-
-/*En este documento utilizo dos tipografías distintas:*/
-@font-face {
+  }
+  
+  /*En este documento utilizo dos tipografías distintas:*/
+  @font-face {
     font-family: raleway;
     src: url(../font/Raleway/static/Raleway-Regular.ttf);
-}
-@font-face {
+  }
+  @font-face {
     font-family: mulish;
     src: url(../font/Mulish/static/Mulish-Regular.ttf);
-}
-body {
+  }
+  body {
     background-color: white;
     color: black;
     text-align: center;
     font-family: mulish;
     font-size: 18px;
-    margin: 5% auto;
+    margin: 10px auto;
     display: flex;
-}
-
-/*Aplico la otra tipografía a los elementos que quiero:*/
-header, h2, h3, h6, .datos p, button {
+  }
+  
+  .toggleB {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 20px;
+  }
+  
+  .toggleButton {
+    width: fit-content;
+    margin: 0;
+    background-color: #54627a;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .toggleButton:hover {
+    box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 30%);
+    transition: all 0.5s;
+  }
+  
+  /*Aplico la otra tipografía a los elementos que quiero:*/
+  header,
+  h2,
+  h3,
+  h6,
+  .datos p,
+  button {
     font-family: raleway;
-}
-
-.contenedor {
+  }
+  
+  .contenedor {
     background-color: #548b5fd6;
-    padding: 0 15px 30px 15px;  /*Para tener también un poco de color verde a los laterales y al final, a modo de marco.*/
+    padding: 0 15px 30px 15px; /*Para tener también un poco de color verde a los laterales y al final, a modo de marco.*/
     display: flex;
     flex-direction: column;
-}
-
-header {
-    height: 590px;              /*Para que la imagen coja solamente la mitad de la imagen, aunque utilicé también otras propiedades, ajustando unas con otras.*/
-}
-
-.divimagen {
+    margin-top: 51px;
+  }
+  
+  header {
+    height: 590px; /*Para que la imagen coja solamente la mitad de la imagen, aunque utilicé también otras propiedades, ajustando unas con otras.*/
+  }
+  
+  .divimagen {
     display: flex;
     flex-direction: column;
-}
-
-.datos {
+  }
+  
+  .datos {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-}
-
-.datos h1 {
+  }
+  
+  .datos h1 {
     font-family: monospace;
     font-size: 70px;
     color: #ccffe5;
     text-shadow: 0 0 13px #101611;
-}
-
-.datos p {
+  }
+  
+  .datos p {
     line-height: 102px;
     font-size: 27px;
     letter-spacing: 1px;
@@ -70,135 +104,142 @@ header {
     text-transform: uppercase;
     color: #f1ece7;
     text-align: center;
-}
-
-h6 {
+  }
+  
+  h6 {
     font-size: xxx-large;
     letter-spacing: 4px;
     border: 2px solid #98fdca;
     width: 48%;
     margin-top: 1%;
-}
-
-.imagen {
+  }
+  
+  .imagen {
     width: 400px;
-    height: 400px;              /*Alto y ancho iguales para conseguir un círculo.*/
+    height: 400px; /*Alto y ancho iguales para conseguir un círculo.*/
     border: 16px solid #f1ece7;
     border-radius: 50%;
-    overflow: hidden;           /*Para ocultar lo que sobresale del borde.*/
-    z-index: 1;                 /*Para que la imagen se superponga al siguiete div.*/
-    top: 35px;                  /*La separo un poco del elemento anterior.*/
-}
-
-.respimg {                      /*Coloco la imagen dentro del círculo:*/
+    overflow: hidden; /*Para ocultar lo que sobresale del borde.*/
+    z-index: 1; /*Para que la imagen se superponga al siguiete div.*/
+    top: 35px; /*La separo un poco del elemento anterior.*/
+  }
+  
+  .respimg {
+    /*Coloco la imagen dentro del círculo:*/
     width: auto;
     height: 100%;
     left: -253px;
-}
-
-section {
+  }
+  
+  section {
     margin-top: -19px;
     background-color: #f1ece7;
     display: flex;
-}
-
-.seccion {
+  }
+  
+  .seccion {
     padding: 11% 4% 0 4%;
     display: flex;
     flex-direction: column;
     gap: 70px;
-}
-
-p {
+  }
+  
+  p {
     text-align: left;
-}
-
-.intro {                        /*Acomodo el texto a la forma redondeada de la imagen.*/
+  }
+  
+  .intro {
+    /*Acomodo el texto a la forma redondeada de la imagen.*/
     display: flex;
     margin-top: 1%;
     gap: 25%;
     text-align: left;
-}
-
-h2 {
+  }
+  
+  h2 {
     text-transform: uppercase;
     font-size: 27px;
     margin-bottom: 4%;
-}
-
-.intro p {
+  }
+  
+  .intro p {
     text-align: inherit;
-}
-
-.quepuedohacer {
+  }
+  
+  .quepuedohacer {
     text-align: right;
-}
-
-.trabajoactual h2 {
+  }
+  
+  .trabajoactual h2 {
     margin-bottom: 2%;
-}
-
-.trabajosanteriores {
+  }
+  
+  .trabajosanteriores {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 61px;
     margin-top: 2%;
-}
-
-.tr1, .tr2, .tr3, .tr4 {
+  }
+  
+  .tr1,
+  .tr2,
+  .tr3,
+  .tr4 {
     width: 48%;
     margin: 0%;
-}
-
-h3 {
+  }
+  
+  h3 {
     text-transform: uppercase;
     font-size: 27px;
     margin-bottom: 3%;
-}
-
-.redes {
+  }
+  
+  .redes {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 6%;
     align-items: center;
-}
-
-.video1 {
+  }
+  
+  .video1 {
     width: 70%;
     margin: 1% 0 2% 0;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     display: flex;
     border: 1px solid #9e9e9e;
-}
-
-.iconos {
+  }
+  
+  .iconos {
     display: flex;
     justify-content: center;
     margin-top: 4%;
-}
-
-a {
+  }
+  
+  a {
     width: 10%;
     margin: 0%;
-}
-
-/*He querido cambiar el texto del botón por el símbolo de "play":*/
-.boton {                        /*Primero escondo el texto de mi HTML:*/
+  }
+  
+  /*He querido cambiar el texto del botón por el símbolo de "play":*/
+  .boton {
+    /*Primero escondo el texto de mi HTML:*/
     text-indent: -9999px;
     line-height: 0;
-}
-
-.boton::after {                 /*Después le digo que me añada este contenido y que lo muestre:*/
+  }
+  
+  .boton::after {
+    /*Después le digo que me añada este contenido y que lo muestre:*/
     content: "\2BC8";
     text-indent: 0;
     display: block;
     line-height: initial;
-}
-
-.boton {
+  }
+  
+  .boton {
     background-color: #548b5fd6;
     width: 50px;
     font-size: 22px;
@@ -206,339 +247,352 @@ a {
     border: none;
     text-shadow: 0 0 13px #253428;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5),
-        4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+      4px 4px 4px 0px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-}
-
-.boton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16);
-}
-
-#linkedin, #twitter, #facebook, #instagram, #youtube, #tumblr {
+  }
+  
+  .boton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.16);
+  }
+  
+  #linkedin,
+  #twitter,
+  #facebook,
+  #instagram,
+  #youtube,
+  #tumblr {
     width: 35px;
-}
-
-@media only screen and (max-width: 1145px) {
+  }
+  
+  @media only screen and (max-width: 1145px) {
     h6 {
-        width: 58%;
+      width: 58%;
     }
-}
-
-@media only screen and (max-width: 1100px) {
+  }
+  
+  @media only screen and (max-width: 1100px) {
     header {
-        height: 541px;
+      height: 541px;
     }
-
+  
     .datos h1 {
-        font-size: 67px;
+      font-size: 67px;
     }
-
+  
     .datos p {
-        font-size: 24px;
+      font-size: 24px;
     }
-
+  
     h6 {
-        width: 54%;
-        font-size: 39px;
+      width: 54%;
+      font-size: 39px;
     }
-
+  
     .imagen {
-        width: 350px;
-        height: 350px;
+      width: 350px;
+      height: 350px;
     }
-
+  
     .respimg {
-        left: -222px;
+      left: -222px;
     }
-
+  
     h2,
     h3 {
-        font-size: 22px;
+      font-size: 22px;
     }
-}
-
-@media only screen and (max-width: 900px) {
+  }
+  
+  @media only screen and (max-width: 900px) {
     header {
-        height: 526px;
+      height: 526px;
     }
-
+  
     .datos h1 {
-        font-size: 63px;
+      font-size: 63px;
     }
-
+  
     .datos p {
-        font-size: 22px;
+      font-size: 22px;
     }
-
+  
     h6 {
-        font-size: 33px;
+      font-size: 33px;
     }
-
+  
     .imagen {
-        width: 300px;
-        height: 300px;
+      width: 300px;
+      height: 300px;
     }
-
+  
     .respimg {
-        left: -189px;
+      left: -189px;
     }
-
+  
     .intro {
-        gap: 7%;
+      gap: 7%;
     }
-
+  
     h2,
     h3 {
-        font-size: 21px;
+      font-size: 21px;
     }
-
+  
     h3 {
-        text-align: left;
+      text-align: left;
     }
-
+  
     p {
-        font-size: 17px;
+      font-size: 17px;
     }
-}
-
-@media only screen and (max-width: 722px) {
+  }
+  
+  @media only screen and (max-width: 722px) {
     body {
-        margin: auto;
+      margin: auto;
     }
-
+  
     header {
-        height: 499px;
+      height: 499px;
     }
-
+  
     .imagen {
-        border: 8px solid #f1ece7;
+      border: 8px solid #f1ece7;
     }
-
+  
     section {
-        padding-top: 4px;
+      padding-top: 4px;
     }
-
+  
     .seccion {
-        padding: 21% 4% 0 4%;
+      padding: 21% 4% 0 4%;
     }
-
+  
     .datos h1 {
-        font-size: 52px;
+      font-size: 52px;
     }
-
+  
     .datos p {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     h6 {
-        width: 60%;
-        line-height: 56px;
-        font-size: 31px;
-        letter-spacing: 2px;
+      width: 60%;
+      line-height: 56px;
+      font-size: 31px;
+      letter-spacing: 2px;
     }
-
+  
     .redes {
-        margin-top: 6%;
+      margin-top: 6%;
     }
-
+  
     .video1 {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .boton {
-        font-size: 17px;
+      font-size: 17px;
     }
-
+  
     .iconos {
-        justify-content: space-evenly;
+      justify-content: space-evenly;
     }
-}
-
-@media only screen and (max-width: 601px) {
+  }
+  
+  @media only screen and (max-width: 601px) {
     header {
-        height: 428px;
+      height: 428px;
     }
-
+  
     .datos {
-        margin-top: 10%;
+      margin-top: 10%;
     }
-
+  
     .datos h1 {
-        font-size: 40px;
+      font-size: 40px;
     }
-
+  
     .datos p {
-        font-size: 17px;
-        line-height: 60px;
+      font-size: 17px;
+      line-height: 60px;
     }
-
+  
     h6 {
-        line-height: 47px;
-        font-size: 27px;
-        letter-spacing: 1px;
+      line-height: 47px;
+      font-size: 27px;
+      letter-spacing: 1px;
     }
-
+  
     p {
-        font-size: 14px;
-        line-height: 25px;
-        text-align: initial;
-        margin: 2%;
-        width: 98%;
+      font-size: 14px;
+      line-height: 25px;
+      text-align: initial;
+      margin: 2%;
+      width: 98%;
     }
-
+  
     section {
-        padding-top: 67px;
+      padding-top: 67px;
     }
-
-}
-
-@media only screen and (max-width: 489px) {
+  }
+  
+  @media only screen and (max-width: 489px) {
     body {
-        margin: auto;
+      margin: auto;
     }
-
+  
     .contenedor {
-        padding: 0 4px 30px 4px;
+      padding: 0 4px 30px 4px;
     }
-
+  
     header {
-        height: 354px;
+      height: 354px;
     }
-
+  
     .datos {
-        margin-top: 32px;
+      margin-top: 32px;
     }
-
+  
     .datos h1 {
-        letter-spacing: 1px;
-        font-size: 29px;
-        line-height: 46px;
+      letter-spacing: 1px;
+      font-size: 29px;
+      line-height: 46px;
     }
-
+  
     .datos p {
-        font-size: 17px;
-        line-height: 53px;
-        text-transform: initial;
+      font-size: 17px;
+      line-height: 53px;
+      text-transform: initial;
     }
-
+  
     h6 {
-        width: 63%;
-        line-height: 31px;
-        font-size: inherit;
-        letter-spacing: 2px;
-        margin-top: 3%;
+      width: 63%;
+      line-height: 31px;
+      font-size: inherit;
+      letter-spacing: 2px;
+      margin-top: 3%;
     }
-
+  
     .imagen {
-        width: 200px;
-        height: 200px;
+      width: 200px;
+      height: 200px;
     }
-
+  
     .respimg {
-        left: -124px;
+      left: -124px;
     }
-
+  
     .seccion {
-        padding: 8% 4% 0 4%;
-        line-height: 25px;
-        gap: 20px;
+      padding: 8% 4% 0 4%;
+      line-height: 25px;
+      gap: 20px;
     }
-
+  
     .intro {
-        display: initial;
+      display: initial;
     }
-
+  
     .quehago {
-        margin: 7% 0;
+      margin: 7% 0;
     }
-
+  
     .quepuedohacer {
-        text-align: center;
+      text-align: center;
     }
-
+  
     h2,
     h3 {
-        font-size: 17px;
-        text-align: center;
-        margin: 2%;
-        width: 98%;
+      font-size: 17px;
+      text-align: center;
+      margin: 2%;
+      width: 98%;
     }
-
+  
     p {
-        font-size: 14px;
-        line-height: 25px;
-        text-align: initial;
-        margin: 2%;
-        width: 98%;
+      font-size: 14px;
+      line-height: 25px;
+      text-align: initial;
+      margin: 2%;
+      width: 98%;
     }
-
+  
     .trabajosanteriores {
-        row-gap: 20px;
+      row-gap: 20px;
     }
-
+  
     .redes {
-        margin-top: 9%;
+      margin-top: 9%;
     }
-
+  
     .video1 {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .boton {
-        font-size: 11px;
+      font-size: 11px;
     }
-
-    #linkedin, #twitter, #facebook, #instagram, #youtube, #tumblr {
-        width: 22px;
+  
+    #linkedin,
+    #twitter,
+    #facebook,
+    #instagram,
+    #youtube,
+    #tumblr {
+      width: 22px;
     }
-}
-
-@media only screen and (max-width: 489px) {
+  }
+  
+  @media only screen and (max-width: 489px) {
     .datos {
-        margin-top: 32px;
+      margin-top: 32px;
     }
-
+  
     .datos h1 {
-        letter-spacing: 0px;
-        line-height: 54px;
-        font-size: 26px;
+      letter-spacing: 0px;
+      line-height: 54px;
+      font-size: 26px;
     }
-
+  
     .datos p {
-        font-size: 16px;
-        text-transform: initial;
-        line-height: 39px;
-        letter-spacing: 0;
+      font-size: 16px;
+      text-transform: initial;
+      line-height: 39px;
+      letter-spacing: 0;
     }
-
+  
     h6 {
-        width: 67%;
-        line-height: 46px;
-        font-size: 15px;
-        letter-spacing: 2px;
-        margin-top: 3%;
+      width: 67%;
+      line-height: 46px;
+      font-size: 15px;
+      letter-spacing: 2px;
+      margin-top: 3%;
     }
-
+  
     .imagen {
-        top: 32px;
+      top: 32px;
     }
-
+  
     section {
-        padding-top: 84px;
+      padding-top: 84px;
     }
-
+  
     .intro p {
-        text-align: initial;
+      text-align: initial;
     }
-
+  
     .trabajosanteriores {
-        row-gap: 20px;
-        flex-direction: column;
+      row-gap: 20px;
+      flex-direction: column;
     }
-
-    .tr1, .tr2, .tr3, .tr4 {
-        width: 100%;
-        line-height: 25px;
+  
+    .tr1,
+    .tr2,
+    .tr3,
+    .tr4 {
+      width: 100%;
+      line-height: 25px;
     }
-
-}
+  }
+  

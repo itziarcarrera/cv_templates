@@ -1,18 +1,27 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Zafra Rodríguez</title>
-
-    <!--PARA VISUALIZAR CADA PLANTILLA, SOLAMENTE HAY QUE CAMBIAR EL Nº 1 POR EL 2 Y EL 3 EN LA SIGUIENTE EXPRESIÓN:-->
-    <link href="./css/css1.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="./css/css1.css">
+    <script>
+        function toggleTheme(value) {
+            var sheets = document.getElementsByTagName('link');
+            sheets[0].href = value;
+        }
+    </script>
 </head>
 
 <body>
+    <div class="toggleB">
+        <button class="toggleButton" onclick="toggleTheme('./css/css1.css')">Plantilla 1</button>
+        <button class="toggleButton" onclick="toggleTheme('./css/css2.css')">Plantilla 2</button>
+        <button class="toggleButton" onclick="toggleTheme('./css/css3.css')">Plantilla 3</button>
+    </div>
+
     <div class="contenedor">
-
-    <!--HE ESTRUCTURADO EL DOCUMENTO EN DOS PARTES: UNA CON LOS DATOS PERSONALES Y FOTO DEL USUARIO Y OTRA PARA LA INFO PROFESIONAL. HABER HECHO LAS TRES PLANTILLAS ME HA SERVIDO PARA DARME CUENTA DE LA IMPORTANCIA DE LA ESTRUCTURA DEL DOCUMETO HTML, PUES ME COMPLICÓ EL DISEÑO DE SEGÚN QUÉ COSAS.-->
-
+        <!--HE ESTRUCTURADO EL DOCUMENTO EN DOS PARTES: UNA CON LOS DATOS PERSONALES Y FOTO DEL USUARIO Y OTRA PARA LA INFO PROFESIONAL. HABER HECHO LAS TRES PLANTILLAS ME HA SERVIDO PARA DARME CUENTA DE LA IMPORTANCIA DE LA ESTRUCTURA DEL DOCUMETO HTML, PUES ME COMPLICÓ EL DISEÑO DE SEGÚN QUÉ COSAS.-->
         <header>
             <div class="divimagen">
                 <div class="datos">
@@ -31,42 +40,62 @@
                 <div class="intro">
                     <div class="quehago">
                         <h2>¿Qué hago?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt aliquam saepe? Doloremque laboriosam nihil at nulla hic repellendus illo adipisci nam vel cumque, dolores quas labore neque commodi qui?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt aliquam saepe?
+                            Doloremque laboriosam nihil at nulla hic repellendus illo adipisci nam vel cumque, dolores
+                            quas labore neque commodi qui?</p>
                     </div>
                     <div class="quepuedohacer">
                         <h2>¿Qué puedo hacer?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt aliquam saepe? Doloremque laboriosam nihil at nulla hic repellendus illo adipisci nam vel cumque, dolores quas labore neque commodi qui?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt aliquam saepe?
+                            Doloremque laboriosam nihil at nulla hic repellendus illo adipisci nam vel cumque, dolores
+                            quas labore neque commodi qui?</p>
                     </div>
                 </div>
 
                 <div class="trabajoactual">
                     <h2>Trabajo actual</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis. Ornare porta laoreet quam dignissim scelerisque libero placerat non arcu. Rhoncus massa egestas sociis pulvinar! Rhoncus ultrices interdum scelerisque erat donec platea, neque aptent massa. Semper augue euismod aliquam in velit semper penatibus ac. Est suscipit cras vitae amet vitae mollis nisi feugiat tristique facilisi rutrum leo? Ac erat quisque etiam purus augue.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi
+                        exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio
+                        saepe earum ea dolor hic libero quis! Debitis. Ornare porta laoreet quam dignissim scelerisque
+                        libero placerat non arcu. Rhoncus massa egestas sociis pulvinar! Rhoncus ultrices interdum
+                        scelerisque erat donec platea, neque aptent massa. Semper augue euismod aliquam in velit semper
+                        penatibus ac. Est suscipit cras vitae amet vitae mollis nisi feugiat tristique facilisi rutrum
+                        leo? Ac erat quisque etiam purus augue.</p>
                 </div>
 
                 <div class="trabajosanteriores">
                     <div class="tr1">
                         <h3>Trabajo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi
+                            exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio
+                            saepe earum ea dolor hic libero quis! Debitis.</p>
                     </div>
                     <div class="tr2">
                         <h3>Trabajo 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi
+                            exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio
+                            saepe earum ea dolor hic libero quis! Debitis.</p>
                     </div>
                     <div class="tr3">
                         <h3>Trabajo 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi
+                            exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio
+                            saepe earum ea dolor hic libero quis! Debitis.</p>
                     </div>
                     <div class="tr4">
                         <h3>Trabajo 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio saepe earum ea dolor hic libero quis! Debitis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reprehenderit fugit, eligendi
+                            exercitationem distinctio neque, reiciendis consectetur laborum, pariatur dolores illo optio
+                            saepe earum ea dolor hic libero quis! Debitis.</p>
                     </div>
                 </div>
 
                 <div class="redes">
                     <h2>Sígueme en redes</h2>
-                    <div class="video1">  <!--HE BUSCADO UN VÍDEO CON CONTENIDO VIRTUAL Y COLORIDO PARA QUE LE DIESE VIDA AL CV-->
-                        <video id="video1" src="mp4/DigitalWorldComprimido.mp4">Vídeo currículum.</video><!--HE TENIDO QUE ACORTARLO MUCHÍSIMO Y COMPRIMIRLO PARA QUE LA PLATAFORMA ME DEJASE ENVIAR EL ZIP.-->
+                    <div class="video1">
+                        <!--HE BUSCADO UN VÍDEO CON CONTENIDO VIRTUAL Y COLORIDO PARA QUE LE DIESE VIDA AL CV-->
+                        <video id="video1" src="mp4/DigitalWorldComprimido.mp4">Vídeo
+                            currículum.</video><!--HE TENIDO QUE ACORTARLO MUCHÍSIMO Y COMPRIMIRLO PARA QUE LA PLATAFORMA ME DEJASE ENVIAR EL ZIP.-->
                     </div>
 
                     <div>
@@ -74,24 +103,27 @@
                     </div>
 
                     <!--AÑADO UN SCRIPT PARA QUE FUNCIONE EL BOTÓN DE REPRODUCCIÓN DEL VÍDEO:-->
-                    <script> 
-                        let video1 = document.getElementById("video1"); 
-                        function vervideo(){
-                            if (video1.paused){
-                                    video1.play();
-                                }
-                            else{
-                                    video1.pause();
-                                }
+                    <script>
+                        let video1 = document.getElementById("video1");
+                        function vervideo() {
+                            if (video1.paused) {
+                                video1.play();
                             }
+                            else {
+                                video1.pause();
+                            }
+                        }
                     </script>
 
                     <!--HE SUSTITUIDO EL TEXTO QUE APARECÍA EN ESTE APARTADO POR LOS ICONOS DE LAS REDES SOCIALES:-->
                     <div class="iconos">
-                        <a href="https://www.linkedin.com"><img src="redes/linkedin.png" alt="LinkedIn" id="linkedin"></a>
+                        <a href="https://www.linkedin.com"><img src="redes/linkedin.png" alt="LinkedIn"
+                                id="linkedin"></a>
                         <a href="https://www.twitter.com"><img src="redes/twitter.png" alt="Twitter" id="twitter"></a>
-                        <a href="https://www.facebook.com"><img src="redes/facebook.png" alt="Facebook" id="facebook"></a>
-                        <a href="https://www.instagram.com"><img src="redes/instagram.png" alt="Instagram" id="instagram"></a>
+                        <a href="https://www.facebook.com"><img src="redes/facebook.png" alt="Facebook"
+                                id="facebook"></a>
+                        <a href="https://www.instagram.com"><img src="redes/instagram.png" alt="Instagram"
+                                id="instagram"></a>
                         <a href="https://www.youtube.com"><img src="redes/youtube.png" alt="youtube" id="youtube"></a>
                         <a href="https://www.tumblr.com"><img src="redes/tumblr.png" alt="Tumblr" id="tumblr"></a>
                     </div>
