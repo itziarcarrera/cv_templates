@@ -1,19 +1,24 @@
-
 /*EN ESTE PRIMER DISEÑO, HE BUSCADO ARMONÍA CROMÁTICA Y MINIMALISMO, COMO A MÍ ME GUSTA.*/
 /*Omitiré comentarios sobre cosas ya explicadas en anteriores entregas y que utilizo con soltura.*/
 
 * {
     /*Para aplicar a todos los elementos del documento.*/
-    width: 100%;         /*Ancho que quiero que tengan todos los elementos de mi web.*/
-    max-width: 2000px;   /*Pongo un ancho máximo para que la web no se estire en exceso y pierda el formato.*/
-    margin: auto;        /*Para centrar la web.*/
-    position: relative;  /*Para alinear verticalmente.*/
+    width: 100%;
+    /*Ancho que quiero que tengan todos los elementos de mi web.*/
+    max-width: 2000px;
+    /*Pongo un ancho máximo para que la web no se estire en exceso y pierda el formato.*/
+    margin: auto;
+    /*Para centrar la web.*/
+    position: relative;
+    /*Para alinear verticalmente.*/
 }
 
 @font-face {
     /*Descargué esta fuente de Internet para incluirla en el documento con @font-face y aplicarla después a los elementos:*/
-    font-family: metropolis;                           /*Le pongo un nombre para usarlo después en el código CSS.*/
-    src: url(../font/metropolis/Metropolis-Light.otf); /*La ruta donde la tengo guardada.*/
+    font-family: metropolis;
+    /*Le pongo un nombre para usarlo después en el código CSS.*/
+    src: url(../font/metropolis/Metropolis-Light.otf);
+    /*La ruta donde la tengo guardada.*/
 }
 
 body {
@@ -31,9 +36,9 @@ body {
     justify-content: center;
     margin: 10px;
     gap: 20px;
-  }
-  
-  .toggleButton {
+}
+
+.toggleButton {
     width: fit-content;
     margin: 0;
     background-color: #54627a;
@@ -47,105 +52,141 @@ body {
     font-size: 17px;
     font-family: metropolis;
     letter-spacing: 1px;
-  }
-  
-  .toggleButton:hover {
+}
+
+.toggleButton:hover {
     box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 30%);
     transition: all 0.5s;
-  }
+}
 
 .contenedor {
-    background-color: white; /*Pongo un color de fondo diferente al del body sobre el que va a aparecer el texto.*/
-    display: flex;             /*Me ayuda a que las cajas estén centradas cuando aplico márgenes y demás y a que la separación entre ellas sea simétrica.*/
+    background-color: white;
+    /*Pongo un color de fondo diferente al del body sobre el que va a aparecer el texto.*/
+    display: flex;
+    /*Me ayuda a que las cajas estén centradas cuando aplico márgenes y demás y a que la separación entre ellas sea simétrica.*/
     flex-direction: column;
 }
 
 .divimagen {
-    display: flex;             /*Para mostrar los datos datos y la imagen al lado, en la misma fila ocupando ambos lo mismo.*/
+    display: flex;
+    /*Para mostrar los datos datos y la imagen al lado, en la misma fila ocupando ambos lo mismo.*/
     background-color: #34495E;
 }
+
 .datos {
     color: #cccccc;
-    line-height: 50px;         /*Me permite separar las líneas rápida y simétricamente sin usar márgenes ni paddings.*/
-    display: flex;             /*Me ayuda a que los elementos no desborden cuando aplico márgenes y demás.*/
-    flex-direction: column;    /*Porque el valor por defecto es "row".*/
+    line-height: 50px;
+    /*Me permite separar las líneas rápida y simétricamente sin usar márgenes ni paddings.*/
+    display: flex;
+    /*Me ayuda a que los elementos no desborden cuando aplico márgenes y demás.*/
+    flex-direction: column;
+    /*Porque el valor por defecto es "row".*/
 }
+
 .datos h1 {
     letter-spacing: 2px;
     font-size: 40px;
 }
+
 .datos p {
     font-size: large;
     letter-spacing: 2px;
 }
+
 h6 {
-    font-size:medium;
+    font-size: medium;
     letter-spacing: 1px;
     border: 1px solid #cccccc;
     width: 40%;
     margin-top: 3%;
 }
-.imagen{
-    display: flex; /*Para que de ajuste a la altura de la imagen.*/
+
+.imagen {
+    display: flex;
+    /*Para que de ajuste a la altura de la imagen.*/
 }
-section{
-    display: flex; /*Para que los elementos no desborden cuando aplico márgenes y demás y a que la separación entre ellos sea simétrica.*/
+
+section {
+    display: flex;
+    /*Para que los elementos no desborden cuando aplico márgenes y demás y a que la separación entre ellos sea simétrica.*/
 }
-.seccion{
+
+.seccion {
     margin: 1%;
     line-height: 25px;
-    display: flex;             /*Para que los elementos hijos me queden uno al lado del otro.*/
-    gap: 10px;                 /*Espacio de separación entre elementos*/
+    display: flex;
+    /*Para que los elementos hijos me queden uno al lado del otro.*/
+    gap: 10px;
+    /*Espacio de separación entre elementos*/
     flex-direction: column;
 }
+
 .intro {
     display: flex;
-    margin-top: 1%;            /*Para separarlo un poquito más del header*/
+    margin-top: 1%;
+    /*Para separarlo un poquito más del header*/
 }
-.quehago, .quepuedohacer {
+
+.quehago,
+.quepuedohacer {
     margin: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h2, p{
+
+h2,
+p {
     margin: 2%;
     width: 98%;
 }
+
 .trabajoactual {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.trabajoactual h2{
+
+.trabajoactual h2 {
     margin: 1% 1% 0 1%;
 }
-.trabajoactual p{
+
+.trabajoactual p {
     width: 96%;
 }
+
 .trabajosanteriores {
     display: flex;
     flex-wrap: wrap;
 }
-.tr1, .tr2, .tr3, .tr4 {
+
+.tr1,
+.tr2,
+.tr3,
+.tr4 {
     width: 46%;
     margin: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .redes {
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
     align-items: center;
 }
-.video1{
+
+.video1 {
     width: 70%;
     margin: 3% 0 2% 0;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /*Utilicé un generador de sombras online.*/
-    display: flex;                             /*Para que de ajuste a la altura del vídeo.*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    /*Utilicé un generador de sombras online.*/
+    display: flex;
+    /*Para que de ajuste a la altura del vídeo.*/
 }
+
 .boton {
     width: 20%;
     color: #cccccc;
@@ -158,147 +199,217 @@ h2, p{
     cursor: pointer;
     /*Descubrí por internet que se podían usar varias sombras y para obtener este bonito efecto. He colocado la sombra hacia el lado derecho abajo y difuminado un poco pero sin expandir. También he jugado con los colores.*/
     box-shadow: 4px 4px 4px 0px rgba(39, 77, 128, 0.7),
-                4px 4px 4px 0px rgba(0, 0, 0, 0.5),
-                4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+        4px 4px 4px 0px rgba(0, 0, 0, 0.5),
+        4px 4px 4px 0px rgba(0, 0, 0, 0.4);
 }
-.boton:hover {                 /*Cuando pasas el ratón por encima del botón desaparece la sombra anterior y aparece esta otra:*/
+
+.boton:hover {
+    /*Cuando pasas el ratón por encima del botón desaparece la sombra anterior y aparece esta otra:*/
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-                0 17px 50px 0 rgba(0, 0, 0, 0.16);
+        0 17px 50px 0 rgba(0, 0, 0, 0.16);
 }
-.iconos{
+
+.iconos {
     display: flex;
-    justify-content: center;   /*Elementos juntos centrados en el medio de su div.*/
+    justify-content: center;
+    /*Elementos juntos centrados en el medio de su div.*/
     margin-top: 4%;
 }
-a{                             /*Para reducir la distancia entre los iconos.*/
-    width: 10%; 
+
+a {
+    /*Para reducir la distancia entre los iconos.*/
+    width: 10%;
     margin: 0%;
 }
-#linkedin, #twitter, #facebook, #instagram, #youtube, #tumblr{
+
+#linkedin,
+#twitter,
+#facebook,
+#instagram,
+#youtube,
+#tumblr {
     width: 35px;
 }
 
 /*EN LAS MEDIA QUERIES, SOLAMENTE COMENTARÉ LO QUE NO SE TRATE DE AJUSTES DE PADDINGS, MÁRGENES, TAMAÑOS DE LETRA, ETC. PARA QUE SEA FÁCIL DE VISUALIZAR.*/
 @media only screen and (max-width: 979px) {
-    body {width: 100%;                         /*Amplío el ancho para que el diseño siga manteniendo el formato un poco más*/
+    body {
+        width: 100%;
+        /*Amplío el ancho para que el diseño siga manteniendo el formato un poco más*/
     }
 }
-@media only screen and (max-width: 879px) {    /*Adapto el contenido del div class="datos"*/
-    .datos {align-items: center;}
+
+@media only screen and (max-width: 879px) {
+
+    /*Adapto el contenido del div class="datos"*/
+    .datos {
+        align-items: center;
+    }
+
     .datos h1 {
         letter-spacing: 0px;
         font-size: 32px;
     }
+
     .datos p {
         letter-spacing: 0px;
         font-size: medium;
     }
+
     h6 {
         width: 60%;
         line-height: 40px;
     }
 }
-@media only screen and (max-width: 689px) { /*Hago que no se visualice la imagen del HTLM y utilizo en su lugar una background-image, pues consigo manejarla mejor así*/
+
+@media only screen and (max-width: 689px) {
+
+    /*Hago que no se visualice la imagen del HTLM y utilizo en su lugar una background-image, pues consigo manejarla mejor así*/
     body {
-        width: 90%;                         /*Para que no haya un espacio entre la imagen y el borde derecho.*/
+        width: 90%;
+        /*Para que no haya un espacio entre la imagen y el borde derecho.*/
     }
+
     .divimagen {
         background-color: #34495E;
         background-image: url(../jpg/imagen.jpg);
         background-size: 410px;
         background-position-x: 220px;
     }
+
     .datos {
         background-color: #34495E;
         width: 60%;
         padding: 3% 0 4% 0;
     }
+
     .datos p {
-        line-height: initial;               /*Reduzco la distancia entre las líneas.*/
+        line-height: initial;
+        /*Reduzco la distancia entre las líneas.*/
     }
+
     h6 {
         width: 58%;
         line-height: initial;
         padding: 3%;
-        font-weight: normal;                /*Reduzco el grosor de la letra.*/
+        font-weight: normal;
+        /*Reduzco el grosor de la letra.*/
     }
+
     .imagen {
         display: flex;
         width: 40%;
     }
-    .respimg{display: none;}
+
+    .respimg {
+        display: none;
+    }
 }
-@media only screen and (max-width: 623px) { /*Vuelvo a utilizar la imagen del HTML.*/
-    body{
+
+@media only screen and (max-width: 623px) {
+
+    /*Vuelvo a utilizar la imagen del HTML.*/
+    body {
         width: 100%;
     }
-    .divimagen{
-        background-image: none;             /*Le digo que no muestre la background-image*/
+
+    .divimagen {
+        background-image: none;
+        /*Le digo que no muestre la background-image*/
         flex-direction: column;
     }
-    .datos{
+
+    .datos {
         width: 100%;
     }
+
     .datos h1 {
         letter-spacing: 1px;
         font-size: 29px;
         width: 93%;
     }
-    .datos p{
+
+    .datos p {
         font-size: 17px;
     }
-    .imagen{
+
+    .imagen {
         width: 100%;
     }
-    .respimg{
-        display: initial;                   /*Para que se muestre la imagen otra vez.*/
+
+    .respimg {
+        display: initial;
+        /*Para que se muestre la imagen otra vez.*/
         margin-bottom: 6%;
     }
+
     h2 {
         font-size: 19px;
     }
+
     p {
         font-size: 13px;
     }
+
     h3 {
         font-size: 15px;
     }
-    .video1{
+
+    .video1 {
         width: 95%;
     }
+
     .boton {
         font-size: 11px;
     }
-    #linkedin, #twitter, #facebook, #instagram, #youtube, #tumblr {
+
+    #linkedin,
+    #twitter,
+    #facebook,
+    #instagram,
+    #youtube,
+    #tumblr {
         width: 22px;
     }
 }
+
 @media only screen and (max-width: 425px) {
-    .intro{
-        flex-direction: column;             /*Pongo la visualización en clolumna.*/
-        align-items: center;                /*Centro los elementos.*/
+    .intro {
+        flex-direction: column;
+        /*Pongo la visualización en clolumna.*/
+        align-items: center;
+        /*Centro los elementos.*/
     }
-    .tr1, .tr2, .tr3, .tr4 {
+
+    .tr1,
+    .tr2,
+    .tr3,
+    .tr4 {
         width: 100%;
         margin: 0;
     }
 }
+
 @media only screen and (max-width: 324px) {
-    .datos{
+    .datos {
         padding-bottom: 6%;
     }
+
     .datos h1 {
         letter-spacing: 0px;
         font-size: 27px;
         width: 100%;
     }
-    .datos p{
+
+    .datos p {
         font-size: 15px;
     }
-    h6{
+
+    h6 {
         width: 65%;
         padding: 3% 0;
     }
+
     .video1 {
         width: 100%;
     }
